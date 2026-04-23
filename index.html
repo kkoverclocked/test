@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja | Associate Director @ Deloitte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pooja-olive': '#8B864E',   /* Matches the sweater */
+                        'pooja-sand': '#D8C0A0',    /* Matches the architectural background */
+                        'pooja-dark': '#2D2926',    /* Professional Charcoal */
+                        'pooja-cream': '#F9F7F2',   /* Background */
+                        'pooja-slate': '#5D6D7E',   /* Accent Slate */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@300;400;600&display=swap');
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        /* Reveal on scroll animation */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Editorial Drop Cap */
+        .drop-cap::first-letter {
+            font-family: 'Playfair Display', serif;
+            float: left;
+            font-size: 5rem;
+            line-height: 0.8;
+            padding-right: 12px;
+            color: #8B864E;
+        }
+
+        /* Image Frame and Zoom Interaction */
+        .img-container { overflow: hidden; position: relative; border: 10px solid white; background-color: #e5e7eb; }
+        .img-container img { 
+            transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+            object-position: center 30%; 
+        }
+        .img-container:hover img {
+            transform: scale(1.15); /* Smooth Zoom In */
+        }
+    </style>
+</head>
+<body class="bg-pooja-cream text-pooja-dark antialiased">
+
+    <!-- Navigation -->
+    <nav class="p-6 md:p-8 flex justify-between items-center fixed w-full z-50 bg-pooja-cream/90 backdrop-blur-md border-b border-pooja-dark/5">
+        <div class="text-2xl font-bold tracking-tighter italic uppercase">Pooja<span class="text-pooja-olive">.</span></div>
+        <div class="space-x-8 text-[10px] font-bold uppercase tracking-widest hidden md:flex">
+            <a href="#home" class="hover:text-pooja-olive transition-colors">Home</a>
+            <a href="#about" class="hover:text-pooja-olive transition-colors">About</a>
+            <a href="#expertise" class="hover:text-pooja-olive transition-colors">Expertise</a>
+            <a href="#contact" class="hover:text-pooja-olive transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 px-6 md:px-20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
+            <div class="z-10">
+                <div class="flex items-center space-x-3 mb-6">
+                    <span class="h-[1px] w-12 bg-pooja-olive"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-pooja-slate">Associate Director @ Deloitte</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl leading-[0.9] mb-8">
+                    Authentic <br><span class="text-pooja-olive italic">Impact.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-pooja-slate max-w-md leading-relaxed mb-10 font-light italic">
+                    "Strategy is the art of navigating complexity with cultural resonance and operational excellence."
+                </p>
+                <div class="flex space-x-6 items-center">
+                    <a href="#contact" class="bg-pooja-dark text-white px-10 py-5 text-xs font-bold uppercase tracking-widest hover:bg-pooja-olive transition-all shadow-xl">
+                        Work With Me
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Image: Increased to w-[80%] and centered -->
+            <div class="relative group flex justify-center md:justify-end">
+                <div class="img-container w-[80%] aspect-[3/4] shadow-[25px_25px_0px_0px_rgba(139,134,78,0.15)] relative z-10">
+                    <img src="https://lh3.googleusercontent.com/d/16f1ZX6udW_BgKp8DZeCDCxYDQsxmEyrr" 
+                         alt="Pooja Portrait" 
+                         class="w-full h-full object-cover">
+                </div>
+                <!-- Background decorative frame adjusted for the 80% width -->
+                <div class="absolute bottom-[-20px] right-[5%] w-[45%] h-[45%] border-2 border-pooja-sand opacity-40 z-0"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-32 bg-white px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-12 gap-12 items-start">
+                
+                <!-- Sidebar Image -->
+                <div class="md:col-span-4 reveal">
+                    <h2 class="text-[10px] font-bold uppercase tracking-[0.5em] text-pooja-olive mb-6">The Journey</h2>
+                    <div class="img-container relative aspect-[4/5]">
+                        <img src="https://lh3.googleusercontent.com/d/16f1ZX6udW_BgKp8DZeCDCxYDQsxmEyrr" 
+                             alt="Professional Profile" 
+                             class="w-full h-full object-cover grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-1000">
+                        <div class="absolute bottom-0 left-0 bg-pooja-olive text-white p-6 w-2/3">
+                            <p class="text-[10px] uppercase tracking-widest leading-loose">Strategic Advisory & <br>Global Leadership</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biography Content -->
+                <div class="md:col-span-8 md:pl-12 reveal">
+                    <h3 class="text-4xl md:text-6xl font-serif italic mb-10 leading-tight">
+                        Leadership built on <span class="text-pooja-olive">Clarity & Resilience.</span>
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <p class="text-pooja-slate leading-relaxed font-light drop-cap">
+                            As an Associate Director at Deloitte, Pooja brings a unique perspective to corporate transformation. Her approach is rooted in the belief that the most complex organizational challenges are best solved with a combination of analytical rigor and a focus on human values.
+                        </p>
+                        <p class="text-pooja-slate leading-relaxed font-light">
+                            Drawing inspiration from the clear, expansive horizons of her travels, she helps organizations find their "true north." Her expertise lies in scaling operations and leading global teams to deliver impact that creates long-term cultural and technological value.
+                        </p>
+                    </div>
+
+                    <div class="mt-16 border-l-4 border-pooja-sand pl-8 py-2">
+                        <p class="text-2xl font-serif italic text-pooja-dark">
+                            "True leadership is not just about adopting the new; it's about navigating change with a purpose that resonates."
+                        </p>
+                        <p class="text-[10px] font-bold uppercase tracking-widest mt-4 text-pooja-olive">— Pooja</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-32 bg-pooja-dark text-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-16">
+                <div class="reveal">
+                    <h3 class="text-pooja-sand text-4xl font-serif mb-6 italic">01.</h3>
+                    <h4 class="text-xl font-bold mb-4 uppercase tracking-widest">Enterprise Strategy</h4>
+                    <p class="text-gray-400 font-light leading-relaxed">Designing resilient business models that thrive in volatile markets through data-driven advisory and organizational alignment.</p>
+                </div>
+                <div class="reveal" style="transition-delay: 0.2s;">
+                    <h3 class="text-pooja-olive text-4xl font-serif mb-6 italic">02.</h3>
+                    <h4 class="text-xl font-bold mb-4 uppercase tracking-widest">Operational Excellence</h4>
+                    <p class="text-gray-400 font-light leading-relaxed">Scaling complex systems and global processes with a focus on sustainable growth, efficiency, and technological integration.</p>
+                </div>
+                <div class="reveal" style="transition-delay: 0.4s;">
+                    <h3 class="text-pooja-slate text-4xl font-serif mb-6 italic">03.</h3>
+                    <h4 class="text-xl font-bold mb-4 uppercase tracking-widest">Global Leadership</h4>
+                    <p class="text-gray-400 font-light leading-relaxed">Empowering diverse teams to deliver excellence for world-class organizations, fostering a culture of high performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 bg-pooja-cream px-6 text-center">
+        <div class="max-w-2xl mx-auto reveal">
+            <h2 class="text-5xl font-serif mb-12 text-pooja-dark">Let's Connect.</h2>
+            <p class="text-pooja-slate mb-12 italic">Available for executive advisory, speaking engagements, and strategic partnerships.</p>
+            
+            <a href="mailto:pooja@deloitte.com" class="text-xl md:text-3xl font-light hover:text-pooja-olive transition-colors border-b border-pooja-dark/20 pb-2 break-all">
+                pooja@deloitte.com
+            </a>
+
+            <div class="mt-16 flex justify-center space-x-12">
+                <a href="#" class="text-pooja-dark hover:text-pooja-olive transition-all flex flex-col items-center group">
+                    <i class="fab fa-linkedin-in text-2xl mb-3 group-hover:-translate-y-1 transition-transform"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">LinkedIn</span>
+                </a>
+                <a href="#" class="text-pooja-dark hover:text-pooja-olive transition-all flex flex-col items-center group">
+                    <i class="fa-solid fa-file-pdf text-2xl mb-3 group-hover:-translate-y-1 transition-transform"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Resume</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-pooja-dark/5 text-[10px] uppercase tracking-[0.3em] text-pooja-slate text-center">
+        <p>&copy; 2024 Pooja. Associate Director @ Deloitte. Impact that Matters.</p>
+    </footer>
+
+    <script>
+        // Simple Intersection Observer for scroll reveal animations
+        const observerOptions = { threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
